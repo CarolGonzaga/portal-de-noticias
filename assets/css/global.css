@@ -99,12 +99,12 @@ main {
     .container {
         max-width: 100%;
         padding-inline: 16px;
-        margin-bottom: 40px;
     }
 
     main { 
         margin-block: 16px; 
         row-gap: 32px;
+        margin-bottom: 40px;
     }
     
 }
