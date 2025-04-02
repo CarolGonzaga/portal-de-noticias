@@ -120,3 +120,42 @@ aside {
         line-height: 140%;
     }
 }
+
+@media (width <=500px) {
+    #featured {
+        &> :first-child {
+            height: 416px;
+        }
+    }
+
+    #weekly header,
+    #ai header,
+    #more header {
+        justify-content: space-between;
+    }
+
+    #weekly div {
+        gap: 32px;
+    }
+
+    #ai article {
+        text-align: left;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+
+        &> :first-child {
+            order: 2;
+        }
+    }
+
+    #more article {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        gap: 15px;
+
+        & img {
+            height: 72px;
+            width: 72px;
+        }
+    }
+}

@@ -34,3 +34,10 @@
 .text-sm {
     font: var(--text-sm);
 }
+
+@media (width <= 500px) {
+    .grid {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

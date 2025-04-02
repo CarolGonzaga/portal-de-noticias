@@ -23,7 +23,20 @@
 
 #secondary {
     padding-block: 14px;
-    border: 1px solid var(----stroke-color);
+    border-top: 1px solid var(--stroke-color);
+    border-bottom: 1px solid var(--stroke-color);
     border-inline: none;
     justify-content: space-between;
+}
+
+@media (width <= 500px) {
+    #primary {
+        padding-block: 16px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    #secondary {
+        font-size: 14px;
+    }
 }
